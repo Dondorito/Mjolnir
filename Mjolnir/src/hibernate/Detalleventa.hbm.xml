@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 06-jun-2018 14:30:58 by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="hibernate.Detalleventa" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="DETALLEVENTA">
+        <id name="codigoArticulo" type="big_decimal">
+            <column name="CODIGO_ARTICULO" precision="22" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="cantidad" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="CANTIDAD" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="precioUd" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="PRECIO_UD" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="codigoVenta" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="CODIGO_VENTA" not-null="true" precision="22" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>
